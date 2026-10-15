@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <title>Invitation form</title>
+</head>
+<body>
+    <div class="card">
+        <h2>Invitation data</h2>
+
+        <div id="error-message" style="color: #e50914; font-size: 14px; margin-bottom: 10px; display: none;"></div>
+
+        <form id="inviteForm" action="/submit-invite" method="GET">
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <input type="number" id="age" name="age" placeholder="Age" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+            <button type="submit">Надіслати</button>
+        </form>
+        <a href="/index.html" class="secondary-link">Main</a>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
